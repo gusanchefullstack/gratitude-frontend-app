@@ -1,13 +1,12 @@
-
-import './App.css'
+import "./App.css";
+import MainUI from "./components/mainUI";
 
 function App() {
-
   return (
     <>
-      <h1>Hello My Gratitude App</h1>
+      <MainUI />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
