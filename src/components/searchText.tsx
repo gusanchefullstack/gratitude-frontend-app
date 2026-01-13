@@ -1,7 +1,9 @@
 
 const SearchText = () => {
   return (
-    <div>searchText</div>
+    <div>
+      <p className="font-logo text-3xl text-primary">Find your gratitude</p>
+    </div>
   )
 }
 

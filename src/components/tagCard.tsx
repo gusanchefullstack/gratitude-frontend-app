@@ -1,8 +1,9 @@
-
-const TagCard = () => {
+const TagCard = ({name}) => {
   return (
-    <div>tagCard</div>
-  )
-}
+    <span className="text-lg font-semibold text-primary py-2 px-3 rounded-md bg-tertiary hover:cursor-pointer italic">
+      {name}
+    </span>
+  );
+};
 
-export default TagCard
+export default TagCard;
