@@ -11,7 +11,14 @@ export function GratitudeListContextProvider({ children }) {
   useEffect(() => {
     const fetchGratitudes = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/v1/gratitudes")
+        const token = "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjAxOWQ3ZWRlLTMzNzgtNGIxYy04NWRkLTQ4YzRiMGVkYzFkYyIsImVtYWlsIjoiZ3VzYW5jaGUiLCJ1c2VybmFtZSI6Imd1c2FuY2hlIiwiaWF0IjoxNzcyMDUwODcwLCJleHAiOjE3NzIxMzcyNzB9.ejZmc4kLl9WxkkFznt93MHE67vMpnqLby8B4aLxi7_s"
+        const response = await fetch("http://localhost:3000/api/v1/gratitudes", {
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization":`Bearer ${token}`
+          }
+          
+        })
         if (!response.ok) {
           throw new Error(`HTTP error: ${response.status}`)
         }

@@ -3,6 +3,8 @@ import HeaderContainer from "./headerContainer";
 import SearchBarContainer from "./searchBarContainer";
 import GratitudesContainer from "./gratitudesContainer";
 import TagsContainer from "./tagsContainer";
+import RegisterForm from "./registerForm";
+import LoginForm from "./loginForm";
 
 const MainUI = () => {
   return (
@@ -11,7 +13,7 @@ const MainUI = () => {
         <HeaderContainer />
         <SearchBarContainer />
         <GratitudesContainer />
-          <TagsContainer />
+        <TagsContainer />
       </GratitudeListContextProvider>
     </div>
   );

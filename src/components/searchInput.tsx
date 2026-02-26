@@ -1,11 +1,18 @@
+import { FiSearch } from "react-icons/fi";
 
 const SearchInput = () => {
   return (
-    <div className="py-8 w-full flex item justify-center">
-      <div className="bg-tertiary rounded-b-4xl rounded-t-4xl w-3/5 flex justify-between items-center">
-        <input className="px-8 py-3 w-full text-xl text-primary font-light italic placeholder:text-secondary placeholder:text-lg placeholder:italic outline-0" type="text" name="searchText" id="searchText" placeholder="Search your gratitude here..." />
-        <div className="px-6 text-secondary hover:cursor-pointer">
-          <i className="fa-solid fa-magnifying-glass"></i>
+    <div className="flex flex-col gap-1 w-full">
+      <div className="bg-tertiary rounded-xl flex items-center focus-within:ring-2 focus-within:ring-secondary">
+        <input
+          className="px-4 py-3 w-full text-primary font-display text-sm placeholder:text-secondary outline-none bg-transparent"
+          type="text"
+          name="searchText"
+          id="searchText"
+          placeholder="Search your gratitude here..."
+        />
+        <div className="px-4 text-secondary hover:text-primary hover:cursor-pointer transition-colors">
+          <FiSearch size={18} />
         </div>
       </div>
     </div>

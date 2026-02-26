@@ -10,7 +10,7 @@ const TagsContainer = () => {
       {[
         ...new Set(gratitudeListCtx.myGratitude.flatMap((item) => item.tags)),
       ].map((tag) => (
-        <TagCard name={tag} />
+        <TagCard name={tag} key={tag}/>
       ))}
     </section>
   );
